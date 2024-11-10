@@ -5,6 +5,13 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
 }
 
 /* Header & Navbar */
@@ -27,7 +34,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500; /* Slightly bold */
+    font-weight: 500;
 }
 
 .navbar a:hover {
@@ -45,7 +52,6 @@ header {
 #home h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    font-weight: 700; /* Bold for header */
 }
 
 #home p {
@@ -84,33 +90,41 @@ header {
     margin: 10px 0;
 }
 
-/* Education Section */
-#education {
-    padding: 50px;
-}
-
-.education-item h3 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.education-item p {
-    font-size: 18px;
-}
-
-/* Projects Section */
-#projects {
+/* Skills Section */
+#skills {
     padding: 50px;
     background-color: #ecf0f1;
 }
 
-.project h3 {
-    font-size: 24px;
-    font-weight: 600;
+.skill-bar {
+    margin-bottom: 30px;
 }
 
-.project p {
-    font-size: 18px;
+.progress {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.python {
+    width: 80%;
+    background-color: #3498db;
+}
+
+.sql {
+    width: 70%;
+    background-color: #2ecc71;
+}
+
+.java {
+    width: 60%;
+    background-color: #f39c12;
 }
 
 /* Contact Section */
@@ -147,4 +161,19 @@ footer {
     padding: 20px;
     background-color: #2c3e50;
     color: white;
+}
+
+/* Hover effects for project items */
+.project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Dark Mode Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
