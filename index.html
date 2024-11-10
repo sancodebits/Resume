@@ -3,56 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sandeep Singh - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-
-    <header class="header">
-        <h1>Sandeep Singh</h1>
-        <p>Assistant Manager - Data Engineering</p>
-        <p>Email: <a href="mailto:sandeepsingh.avanti@gmail.com">sandeepsingh.avanti@gmail.com</a></p>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Welcome to my interactive resume! I'm passionate about data engineering and data science.</p>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Airtel Payments Bank</strong> (July 2024 – Present) - Assistant Manager</li>
-                <li><strong>Airtel Payments Bank</strong> (July 2023 – June 2024) - Engineering Trainee</li>
-            </ul>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <p>Python, Java, C++, SQL, Kafka, Spark, AWS, MySQL, Elasticsearch</p>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li>Room Reservation System (Java, Spring Boot)</li>
-                <li>Banking System (C++)</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>Connect with me:</p>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Sandeep Singh</h1>
+        <p>Assistant Manager - Data Engineering & FRMS</p>
         <div class="social-links">
+            <a href="mailto:sandeepsingh.avanti@gmail.com" target="_blank">Email</a>
             <a href="https://www.linkedin.com/in/sancode" target="_blank">LinkedIn</a>
             <a href="https://github.com/sancodebits" target="_blank">GitHub</a>
         </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>National Institute of Technology - Allahabad (July 2019 – June 2023)</p>
+        <p>Bachelor of Technology - Electronics and Communication Engineering | CPI: 8.7</p>
+        <p>Jawahar Navodaya Vidyalaya, Pondicherry (July 2016 – June 2018) | AISSCE - XII: 90%</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3>Airtel Payments Bank - Assistant Manager (July 2024 – Present)</h3>
+            <p><strong>Role:</strong> Assistant Manager - Data Engineering and FRMS</p>
+            <p><strong>Location:</strong> Gurugram, Haryana</p>
+            <ul>
+                <li>Developed automated dashboard to monitor the statistics of freeze customers across all AI-ML models and Risk Rules.</li>
+                <li>Enriched the model to increase coverage over fraudsters reported by LEA (Law Enforcement Agencies).</li>
+                <li>Automated over 15 business intelligence reports, enhancing data accessibility for stakeholders with faster, error-free reporting and minimal manual effort.</li>
+                <li>Developed rule-based systems through data analysis to flag fraudsters and minimize risk effectively.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Airtel Payments Bank - Engineering Trainee (July 2023 – June 2024)</h3>
+            <p><strong>Role:</strong> Engineering Trainee - Data Engineering</p>
+            <p><strong>Location:</strong> Gurugram, Haryana</p>
+            <ul>
+                <li>Developed and automated dynamic dashboards utilizing Elastic-fetched data, integrating ETL processes to deliver actionable insights to cross-functional teams.</li>
+                <li>Proficient in Python scripting to retrieve data from diverse sources including Elastic, Hive, Oracle databases, and Parquet files as sources, ensuring seamless data integration.</li>
+                <li>Automated job monitoring and system performance reports, triggered daily via cron tab.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Data Visualization Section (JavaScript-based feature) -->
+    <section id="data-visualization">
+        <h2>Data Engineering Insights</h2>
+        <p>Visualizing some key stats from my data engineering work:</p>
+        <canvas id="reportChart"></canvas> <!-- Chart.js canvas -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Room Reservation System</h3>
+            <p>Built with Java, Spring Boot, JPA, and JPQL.</p>
+        </div>
+        <div class="project">
+            <h3>Banking System</h3>
+            <p>Built using C++ with OOP principles.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sandeep Singh</p>
     </footer>
 
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
