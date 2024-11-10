@@ -3,130 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sandeep Singh's Resume - Assistant Manager in Data Engineering & FRMS">
-    <meta name="author" content="Sandeep Singh">
-    <title>Sandeep Singh - Resume</title>
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sandeep Singh - Data Engineering Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
     <header>
-        <nav class="navbar">
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button class="theme-toggle">🌙</button></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Sandeep Singh</h1>
-        <p>Assistant Manager - Data Engineering & FRMS at Airtel Payments Bank</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/sancode" target="_blank">LinkedIn</a>
-            <a href="https://github.com/sancodebits" target="_blank">GitHub</a>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Sandeep Singh</h1>
+            <p>Assistant Manager in Data Engineering | Automation & Business Intelligence Expert</p>
+            <button><a href="#resume">View My Resume</a></button>
         </div>
     </section>
+    
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Airtel Payments Bank</h3>
+                <p><strong>Assistant Manager - Data Engineering and FRMS</strong> | July 2024 – Present | Gurugram, Haryana</p>
+                <ul>
+                    <li><strong>Automated Dashboard Development:</strong> Designed and developed an automated dashboard to monitor freeze customers across multiple AI-ML models and Risk Rules for real-time tracking and decision-making.</li>
+                    <li><strong>Enhanced Model Coverage:</strong> Improved fraud detection models by enriching data to increase fraudster coverage flagged by Law Enforcement Agencies (LEA), improving detection accuracy.</li>
+                    <li><strong>Business Intelligence Report Automation:</strong> Automated over 15 critical business intelligence reports, making data accessibility faster and error-free, while reducing manual effort.</li>
+                    <li><strong>Rule-Based Systems Development:</strong> Developed rule-based systems to flag potential fraudsters, using historical data to minimize fraud and enhance security.</li>
+                </ul>
+            </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Airtel Payments Bank - Assistant Manager</h3>
-            <p><strong>July 2024 – Present | Gurugram, Haryana</strong></p>
-            <ul>
-                <li>Developed automated dashboard to monitor statistics of freeze customers.</li>
-                <li>Enriched AI-ML models for better fraud detection and coverage.</li>
-                <li>Automated over 15 BI reports for faster, error-free reporting.</li>
-                <li>Developed rule-based systems to flag fraudsters and minimize risk.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Airtel Payments Bank - Engineering Trainee</h3>
-            <p><strong>July 2023 – June 2024 | Gurugram, Haryana</strong></p>
-            <ul>
-                <li>Developed dynamic dashboards using Elastic-fetched data.</li>
-                <li>Automated ETL processes and integrated data from multiple sources.</li>
-                <li>Monitored job performance and system health via cron jobs.</li>
-            </ul>
+            <div class="timeline-item">
+                <h3>Airtel Payments Bank</h3>
+                <p><strong>Engineering Trainee - Data Engineering</strong> | July 2023 – June 2024 | Gurugram, Haryana</p>
+                <ul>
+                    <li><strong>Dynamic Dashboard Development:</strong> Developed and automated dynamic dashboards with data fetched from ElasticSearch, integrating ETL processes for actionable insights.</li>
+                    <li><strong>Python Scripting for Data Integration:</strong> Wrote Python scripts to retrieve data from diverse sources such as ElasticSearch, Hive, Oracle databases, and Parquet files for seamless data integration.</li>
+                    <li><strong>Automated Job Monitoring:</strong> Automated monitoring of data jobs and system performance using cron jobs, generating daily reports to improve system optimization.</li>
+                </ul>
+            </div>
         </div>
     </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>National Institute of Technology - Allahabad</h3>
-            <p><strong>Bachelor of Technology - Electronics and Communication Engineering</strong></p>
-            <p>CPI: 8.7 | July 2019 – June 2023 | Prayagraj, Uttar Pradesh</p>
-        </div>
-        <div class="education-item">
-            <h3>Jawahar Navodaya Vidyalaya, Pondicherry</h3>
-            <p><strong>AISSCE - XII: 90%</strong></p>
-            <p>July 2016 – June 2018 | Puducherry</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
+    
+    <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <div class="project">
             <h3>Room Reservation System</h3>
-            <p>Developed a system using Java, Spring Boot, and JPA. Allowed users to book rooms and add additional services.</p>
+            <p><strong>Technologies Used:</strong> Java, Spring Boot, JPA, JPQL, Postman</p>
+            <p><strong>January 2022:</strong> Developed a room reservation system that allows users to book rooms, with features for admins to manage rooms, layouts, and bookings. Users can add services like food, drinks, and equipment, while admins can track all bookings efficiently.</p>
+            <a href="https://github.com/sancodebits/room-reservation" target="_blank">View Project</a>
         </div>
+        
         <div class="project">
             <h3>Banking System</h3>
-            <p>Created a banking system with C++ supporting account creation, transactions, and withdrawals.</p>
+            <p><strong>Technologies Used:</strong> C++, Visual Studio</p>
+            <p><strong>September 2020:</strong> Created a robust banking system with functionalities such as account creation, balance checking, deposits, and withdrawals, all built using C++ and OOP principles. The UI was designed for ease of use and functionality.</p>
+            <a href="https://github.com/sancodebits/banking-system" target="_blank">View Project</a>
         </div>
     </section>
-
-    <!-- Skills Section with Progress Bars -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skill-bar">
-            <p>Python</p>
-            <div class="progress">
-                <div class="progress-bar python"></div>
-            </div>
-        </div>
-        <div class="skill-bar">
-            <p>SQL</p>
-            <div class="progress">
-                <div class="progress-bar sql"></div>
-            </div>
-        </div>
-        <div class="skill-bar">
-            <p>Java</p>
-            <div class="progress">
-                <div class="progress-bar java"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Sandeep Singh. All Rights Reserved.</p>
+    <footer class="footer">
+        <p>© 2024 Sandeep Singh | <a href="mailto:sandeepsingh.avanti@gmail.com">Email</a> | <a href="https://linkedin.com/in/sancode">LinkedIn</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
