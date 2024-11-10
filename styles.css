@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #fafafa; /* Light background for light mode */
     color: #333;
     transition: all 0.3s ease;
     font-size: 16px;
@@ -17,10 +17,11 @@ body {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #121212; /* Dark background for dark mode */
     color: #e4e4e4;
 }
 
+/* Link Style */
 a {
     color: #4a90e2;
     text-decoration: none;
@@ -86,13 +87,62 @@ a:hover {
 footer {
     text-align: center;
     margin-top: 50px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light footer background */
+    border-radius: 5px;
+}
+
+footer.dark-mode {
+    background-color: #333; /* Dark footer background */
 }
 
 footer a {
     color: #4a90e2;
+    font-size: 1.2em;
+    margin: 0 10px;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
+/* LinkedIn and GitHub Links Spacing */
+footer p {
+    margin-top: 10px;
+}
+
+/* Styling for the Footer Links for better spacing */
+footer .social-links a {
+    margin: 0 20px;  /* Add spacing between the links */
+    font-size: 1.2em;  /* Make the links slightly larger */
+}
+
+/* Section Padding */
+.section {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Section Background */
+body.dark-mode .section {
+    background-color: #1e1e1e;
+}
+
+/* Header Styles */
+header h1, header p {
+    margin-bottom: 10px;
+}
+
+/* Making the sections responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .theme-toggle {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+}
