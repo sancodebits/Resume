@@ -1,43 +1,42 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').slice(1);
-        const targetSection = document.getElementById(targetId);
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
+// Smooth Scroll Functionality
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
     });
 });
 
-// Scroll reveal effect
-const revealElements = document.querySelectorAll('.float-in');
-const revealOnScroll = () => {
-    revealElements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-            element.classList.add('visible');
-        }
-    });
-};
-window.addEventListener('scroll', revealOnScroll);
+// Form Validation (Optional - For a simple validation to check fields)
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
 
-// Active link highlight on scroll
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute('id');
-        }
-    });
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
+    if (!name || !email || !message) {
+        e.preventDefault(); // Prevent form submission
+        alert('Please fill out all fields before submitting!');
+    } else {
+        alert('Your message has been sent!');
+    }
 });
+
+// Scroll Animation Effect (Adding an animation when sections come into view)
+const elements = document.querySelectorAll('.container, .experience-item, .contact-info');
+
+function handleScrollAnimation() {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            el.classList.add('animate');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollAnimation);
+
+// Initial call to animate elements that are in view
+handleScrollAnimation();
