@@ -30,26 +30,6 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* Floating Animation Effect */
-@keyframes floatUp {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* General Section Styling */
-section {
-    padding: 50px 0;
-    opacity: 0; /* Make sections invisible initially */
-    animation: floatUp 1s ease-out forwards;
-    visibility: hidden;
-}
-
 /* Header Section */
 header {
     background-color: #004c8c;
@@ -74,9 +54,38 @@ header nav ul li a {
     font-size: 1.1rem;
 }
 
+/* Floating Animations */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Section Padding & Margins for Consistency */
+section {
+    padding: 50px 0;
+}
+
 /* Resume Section */
 .resume-section {
     background-color: white;
+}
+
+.resume-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Experience Section */
@@ -135,18 +144,6 @@ header nav ul li a {
     color: #0056b3;
 }
 
-/* Experience and Project Item Margins */
-.experience, .projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.experience-item, .project {
-    width: 48%; /* Ensure both project and experience items have the same width */
-}
-
 /* Contact Section */
 .contact-section {
     background-color: #004c8c;
@@ -193,6 +190,18 @@ form button:hover {
     background-color: #0056b3;
 }
 
+/* Greeting Message */
+#greeting-message {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 /* Footer Section */
 .footer {
     background-color: #004c8c;
@@ -213,6 +222,6 @@ form button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .experience-item, .project {
-        width: 100%; /* Stack items vertically on smaller screens */
+        width: 100%;
     }
 }
