@@ -1,32 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Apply floating effect to elements with 'floating' class
-    const floatingElements = document.querySelectorAll('.floating');
-    floatingElements.forEach((element) => {
-        element.classList.add('floating');
-    });
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    // Form Submission for Contact Section
-    const form = document.getElementById('contact-form');
-    const greetingMessage = document.getElementById('greeting-message');
+    const name = event.target.name.value;
+    const messageDiv = document.getElementById('greeting-message');
+    messageDiv.textContent = `Thank you for your message, ${name}! I will get back to you soon.`;
+    messageDiv.style.display = 'block';
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Show greeting message
-        greetingMessage.style.display = 'block';
-
-        // Reset form after submission
-        form.reset();
-
-        // Disable submit button and update text
-        const submitButton = form.querySelector('button');
-        submitButton.disabled = true;
-        submitButton.textContent = 'Message Sent';
-
-        // Re-enable button after 3 seconds
-        setTimeout(function () {
-            submitButton.disabled = false;
-            submitButton.textContent = 'Send Message';
-        }, 3000);
-    });
+    setTimeout(function() {
+        messageDiv.style.display = 'none';
+    }, 5000); // Hide the message after 5 seconds
 });
