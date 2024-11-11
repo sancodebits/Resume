@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Singh - Data Engineering Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Sandeep Singh - Resume</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
-        <nav class="container">
-            <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
         <div class="container">
-            <img src="profile.jpg" alt="Sandeep Singh's Profile Photo" class="profile-photo">
-            <h1>Hi, I'm Sandeep Singh</h1>
-            <p>Assistant Manager in Data Engineering | Automation & Business Intelligence Expert</p>
-            <div class="button-group">
-                <button class="float-button"><a href="resume.pdf" download="Sandeep_Singh_Resume.pdf">Download Resume</a></button>
-                <button class="float-button"><a href="#resume">View My Resume</a></button>
+            <h2>Resume</h2>
+            <p>Detailed resume content can be placed here, including education and skills.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience">
+                <!-- Experience Item -->
+                <div class="experience-item">
+                    <h3>Airtel Payments Bank - Assistant Manager (Data Engineering)</h3>
+                    <p><strong>July 2024 – Present</strong></p>
+                    <ul>
+                        <li>Developed automated dashboards to monitor the statistics of freeze customers across all AI-ML models and Risk Rules.</li>
+                        <li>Enriched the model to increase coverage over the fraudster reported by LEA.</li>
+                        <li>Automated over 15 business intelligence reports, enhancing data accessibility for stakeholders with faster, error-free reporting and minimal manual effort.</li>
+                        <li>Developed rule-based systems through data analysis to flag fraudsters and minimize risk effectively.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Airtel Payments Bank - Engineering Trainee (Data Engineering)</h3>
+                    <p><strong>July 2023 – June 2024</strong></p>
+                    <ul>
+                        <li>Developed and automated dynamic dashboards utilizing Elastic-fetched data, integrating ETL processes to deliver actionable insights to cross-functional teams.</li>
+                        <li>Proficient in Python scripting to retrieve data from diverse sources including Elastic, Hive, Oracle databases, and Parquet file as source, ensuring seamless data integration.</li>
+                        <li>Automated job monitoring and system performance report, triggered daily via cron tab.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-<!-- Resume Section -->
-<section id="resume" class="resume-section">
-    <div class="container">
-        <h2>Experience</h2>
-        <div class="experience">
-            <div class="experience-item">
-                <h3>Airtel Payments Bank</h3>
-                <p><strong>Assistant Manager - Data Engineering and FRMS</strong><br>July 2024 – Present | Gurugram, Haryana</p>
-                <ul>
-                    <li>Developed automated dashboard to monitor freeze customer statistics across all AI-ML models and Risk Rules.</li>
-                    <li>Enriched models to increase coverage over fraudsters reported by LEA.</li>
-                    <li>Automated over 15 business intelligence reports to enhance data accessibility for stakeholders.</li>
-                    <li>Developed rule-based systems for fraud detection and risk minimization.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Airtel Payments Bank</h3>
-                <p><strong>Engineering Trainee - Data Engineering</strong><br>July 2023 – June 2024 | Gurugram, Haryana</p>
-                <ul>
-                    <li>Developed and automated dynamic dashboards using Elastic-fetched data with integrated ETL processes.</li>
-                    <li>Proficient in Python scripting for seamless data integration from sources like Elastic, Hive, Oracle databases, and Parquet files.</li>
-                    <li>Automated job monitoring and system performance reporting, triggered daily via cron jobs.</li>
-                </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Room Reservation System</h3>
+                    <p>Developed a comprehensive room reservation system with Java, Spring Boot, and JPA.</p>
+                    <a href="https://github.com/sancodebits/room-reservation-system" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
+                </div>
+                <div class="project">
+                    <h3>Banking System</h3>
+                    <p>Created a robust banking system using C++ and OOP principles for efficient account management.</p>
+                    <a href="https://github.com/sancodebits/banking-system" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Room Reservation System</h3>
-            <p><strong>Technologies Used:</strong> Java, Spring Boot, JPA, JPQL</p>
-            <p>A comprehensive room reservation system where administrators can manage room bookings, layouts, and additional services such as food, drinks, and equipment.</p>
-            <a href="https://github.com/sancodebits/Room-Reservation-System" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
-        </div>
-        <div class="project">
-            <h3>Banking System</h3>
-            <p><strong>Technologies Used:</strong> C++, Visual Studio</p>
-            <p>A robust banking system developed using C++ with object-oriented principles for account management, including operations such as deposits, withdrawals, and account creation/deletion.</p>
-            <a href="https://github.com/sancodebits/Banking-System" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -102,11 +102,11 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2024 Sandeep Singh | <a href="mailto:sandeepsingh.avanti@gmail.com">Email</a> | <a href="https://linkedin.com/in/sancode">LinkedIn</a></p>
-        </div>
+        <p>© 2024 Sandeep Singh. All rights reserved.</p>
     </footer>
 
+    <!-- Optional JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
