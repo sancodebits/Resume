@@ -30,6 +30,26 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* Floating Animation Effect */
+@keyframes floatUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* General Section Styling */
+section {
+    padding: 50px 0;
+    opacity: 0; /* Make sections invisible initially */
+    animation: floatUp 1s ease-out forwards;
+    visibility: hidden;
+}
+
 /* Header Section */
 header {
     background-color: #004c8c;
@@ -54,17 +74,13 @@ header nav ul li a {
     font-size: 1.1rem;
 }
 
-/* Section Padding & Margins for Consistency */
-section {
-    padding: 50px 0;
-}
-
 /* Resume Section */
 .resume-section {
     background-color: white;
 }
 
-.experience-item, .project {
+/* Experience Section */
+.experience-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -72,10 +88,27 @@ section {
     margin-bottom: 20px;
 }
 
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    list-style-type: disc;
+}
+
 /* Projects Section */
 .projects-section {
     background-color: #f7f7f7;
     padding: 50px 0;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .project p {
@@ -110,9 +143,8 @@ section {
     gap: 20px;
 }
 
-/* Ensuring Equal Width for All Items */
 .experience-item, .project {
-    width: 48%; /* Ensure that both project and experience items have the same width */
+    width: 48%; /* Ensure both project and experience items have the same width */
 }
 
 /* Contact Section */
