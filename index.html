@@ -6,6 +6,7 @@
     <title>Sandeep Singh - Data Engineering Professional</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,8 +22,10 @@
     
     <section id="home" class="hero">
         <div class="container">
+            <img src="profile.jpg" alt="Sandeep Singh's Profile Photo" class="profile-photo">
             <h1>Hi, I'm Sandeep Singh</h1>
             <p>Assistant Manager in Data Engineering | Automation & Business Intelligence Expert</p>
+            <button><a href="resume.pdf" download="Sandeep_Singh_Resume.pdf">Download Resume</a></button>
             <button><a href="#resume">View My Resume</a></button>
         </div>
     </section>
@@ -30,24 +33,24 @@
     <section id="resume" class="resume-section">
         <h2>Resume</h2>
         <div class="timeline">
-            <div class="timeline-item">
+            <div class="timeline-item float-in">
                 <h3>Airtel Payments Bank</h3>
                 <p><strong>Assistant Manager - Data Engineering and FRMS</strong> | July 2024 – Present | Gurugram, Haryana</p>
                 <ul>
-                    <li><strong>Automated Dashboard Development:</strong> Designed and developed an automated dashboard to monitor freeze customers across multiple AI-ML models and Risk Rules for real-time tracking and decision-making.</li>
-                    <li><strong>Enhanced Model Coverage:</strong> Improved fraud detection models by enriching data to increase fraudster coverage flagged by Law Enforcement Agencies (LEA), improving detection accuracy.</li>
-                    <li><strong>Business Intelligence Report Automation:</strong> Automated over 15 critical business intelligence reports, making data accessibility faster and error-free, while reducing manual effort.</li>
+                    <li><strong>Automated Dashboard Development:</strong> Designed and developed an automated dashboard to monitor freeze customers across multiple AI-ML models and Risk Rules.</li>
+                    <li><strong>Enhanced Model Coverage:</strong> Improved fraud detection models by enriching data for better fraudster coverage flagged by Law Enforcement Agencies (LEA).</li>
+                    <li><strong>Business Intelligence Report Automation:</strong> Automated over 15 critical BI reports, enhancing data accessibility and reducing manual effort.</li>
                     <li><strong>Rule-Based Systems Development:</strong> Developed rule-based systems to flag potential fraudsters, using historical data to minimize fraud and enhance security.</li>
                 </ul>
             </div>
 
-            <div class="timeline-item">
+            <div class="timeline-item float-in">
                 <h3>Airtel Payments Bank</h3>
                 <p><strong>Engineering Trainee - Data Engineering</strong> | July 2023 – June 2024 | Gurugram, Haryana</p>
                 <ul>
-                    <li><strong>Dynamic Dashboard Development:</strong> Developed and automated dynamic dashboards with data fetched from ElasticSearch, integrating ETL processes for actionable insights.</li>
-                    <li><strong>Python Scripting for Data Integration:</strong> Wrote Python scripts to retrieve data from diverse sources such as ElasticSearch, Hive, Oracle databases, and Parquet files for seamless data integration.</li>
-                    <li><strong>Automated Job Monitoring:</strong> Automated monitoring of data jobs and system performance using cron jobs, generating daily reports to improve system optimization.</li>
+                    <li><strong>Dynamic Dashboard Development:</strong> Developed and automated dynamic dashboards with data from ElasticSearch, integrating ETL processes for actionable insights.</li>
+                    <li><strong>Python Scripting for Data Integration:</strong> Wrote Python scripts to retrieve data from ElasticSearch, Hive, Oracle databases, and Parquet files for seamless data integration.</li>
+                    <li><strong>Automated Job Monitoring:</strong> Automated monitoring of data jobs and system performance using cron jobs, generating daily reports.</li>
                 </ul>
             </div>
         </div>
@@ -55,23 +58,41 @@
     
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project float-in">
             <h3>Room Reservation System</h3>
             <p><strong>Technologies Used:</strong> Java, Spring Boot, JPA, JPQL, Postman</p>
-            <p><strong>January 2022:</strong> Developed a room reservation system that allows users to book rooms, with features for admins to manage rooms, layouts, and bookings. Users can add services like food, drinks, and equipment, while admins can track all bookings efficiently.</p>
-            <a href="https://github.com/sancodebits/ROOM-RESERVATION" target="_blank">View Project</a>
+            <p>Developed a room reservation system allowing users to book rooms with features for admins to manage rooms, layouts, and bookings.</p>
+            <a href="https://github.com/sancodebits/room-reservation" target="_blank">View Project</a>
         </div>
         
-        <div class="project">
+        <div class="project float-in">
             <h3>Banking System</h3>
             <p><strong>Technologies Used:</strong> C++, Visual Studio</p>
-            <p><strong>September 2020:</strong> Created a robust banking system with functionalities such as account creation, balance checking, deposits, and withdrawals, all built using C++ and OOP principles. The UI was designed for ease of use and functionality.</p>
-            <a href="https://github.com/sancodebits/BANKING-MANAGMENT-SYSTEM" target="_blank">View Project</a>
+            <p>Created a banking system with account management functionalities using C++ and OOP principles.</p>
+            <a href="https://github.com/sancodebits/banking-system" target="_blank">View Project</a>
         </div>
     </section>
     
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:sandeepsingh.avanti@gmail.com">sandeepsingh.avanti@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone-alt"></i> 
+                <a href="tel:+919677565236">+91 9677565236</a>
+            </p>
+            <p>
+                <i class="fab fa-linkedin"></i> 
+                <a href="https://linkedin.com/in/sancode" target="_blank">linkedin.com/in/sancode</a>
+            </p>
+            <p>
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com/sancodebits" target="_blank">github.com/sancodebits</a>
+            </p>
+        </div>
         <form>
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
