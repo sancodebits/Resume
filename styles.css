@@ -64,6 +64,45 @@ header .nav-link {
     background-color: #0056b3;
 }
 
+/* Resume Section */
+.resume-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.resume-section .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.resume-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.experience-item ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
 /* Contact Section Styling */
 .contact-section {
     background-color: #f7f7f7;
