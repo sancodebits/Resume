@@ -164,6 +164,8 @@ h3 {
 }
 
 /* Contact Section */
+
+/* Contact Section */
 .contact-section {
     background-color: #ffffff;
     padding: 40px;
@@ -175,17 +177,27 @@ h3 {
 .contact-info p {
     font-size: 1.1rem;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info a {
     color: #007bff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
 }
 
+.contact-logo {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Form Styles */
 form input, form textarea, form button {
     width: 100%;
     padding: 12px;
@@ -195,14 +207,21 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.7); /* Transparent button */
     color: white;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: rgba(0, 123, 255, 1); /* Full color on hover */
 }
+
+/* Small adjustments to enhance logo display */
+.contact-logo {
+    width: 25px;  /* Slightly larger logos */
+    margin-right: 12px;
+}
+
 
 /* Footer Section */
 .footer {
