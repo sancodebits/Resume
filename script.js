@@ -40,3 +40,27 @@ window.addEventListener('scroll', handleScrollAnimation);
 
 // Initial call to animate elements that are in view
 handleScrollAnimation();
+
+// JavaScript to trigger floating animation on scroll
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all sections
+    const sections = document.querySelectorAll("section");
+
+    // Function to add the class 'visible' when the section is in view
+    function handleScroll() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                section.classList.add("visible");
+            } else {
+                section.classList.remove("visible");
+            }
+        });
+    }
+
+    // Call handleScroll initially and on every scroll event
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+});
+
