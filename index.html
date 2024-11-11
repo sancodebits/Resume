@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Singh - Resume</title>
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sandeep Singh's Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
+    <section id="resume" class="resume-section floating">
         <div class="container">
             <h2>Resume</h2>
-            <p>Detailed resume content can be placed here, including education and skills.</p>
+            <div class="resume-content">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>National Institute of Technology - Allahabad</strong> | Bachelor of Technology in Electronics and Communication Engineering (2019 - 2023) | CPI: 8.7</li>
+                    <li><strong>Jawahar Navodaya Vidyalaya, Pondicherry</strong> | AISSCE - XII: Score - 90% (2016 - 2018)</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
+    <section id="experience" class="experience-section floating">
         <div class="container">
             <h2>Experience</h2>
             <div class="experience">
-                <!-- Experience Item -->
                 <div class="experience-item">
-                    <h3>Airtel Payments Bank - Assistant Manager (Data Engineering)</h3>
-                    <p><strong>July 2024 – Present</strong></p>
+                    <h3>Airtel Payments Bank</h3>
+                    <p><strong>Assistant Manager - Data Engineering</strong> | July 2024 - Present</p>
                     <ul>
-                        <li>Developed automated dashboards to monitor the statistics of freeze customers across all AI-ML models and Risk Rules.</li>
-                        <li>Enriched the model to increase coverage over the fraudster reported by LEA.</li>
-                        <li>Automated over 15 business intelligence reports, enhancing data accessibility for stakeholders with faster, error-free reporting and minimal manual effort.</li>
-                        <li>Developed rule-based systems through data analysis to flag fraudsters and minimize risk effectively.</li>
+                        <li>Developed automated dashboard to monitor statistics of freeze customers.</li>
+                        <li>Enriched AI-ML models to improve fraud coverage.</li>
+                        <li>Automated 15+ business intelligence reports to enhance data accessibility.</li>
+                        <li>Developed rule-based systems through data analysis to minimize risk.</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <h3>Airtel Payments Bank - Engineering Trainee (Data Engineering)</h3>
-                    <p><strong>July 2023 – June 2024</strong></p>
+                    <h3>Airtel Payments Bank</h3>
+                    <p><strong>Engineering Trainee - Data Engineering</strong> | July 2023 - June 2024</p>
                     <ul>
-                        <li>Developed and automated dynamic dashboards utilizing Elastic-fetched data, integrating ETL processes to deliver actionable insights to cross-functional teams.</li>
-                        <li>Proficient in Python scripting to retrieve data from diverse sources including Elastic, Hive, Oracle databases, and Parquet file as source, ensuring seamless data integration.</li>
-                        <li>Automated job monitoring and system performance report, triggered daily via cron tab.</li>
+                        <li>Developed dynamic dashboards with Elastic-fetched data.</li>
+                        <li>Automated job monitoring and system performance reports triggered daily.</li>
+                        <li>Proficient in Python to retrieve data from various sources.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section floating">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project">
                     <h3>Room Reservation System</h3>
-                    <p>Developed a comprehensive room reservation system with Java, Spring Boot, and JPA.</p>
-                    <a href="https://github.com/sancodebits/room-reservation-system" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
+                    <p><strong>Technologies:</strong> Java, Spring Boot, JPA, JPQL</p>
+                    <ul>
+                        <li>Developed a room reservation system with features to manage bookings, rooms, layouts, and more.</li>
+                        <li>Users can add entities like food, drinks, and equipment.</li>
+                    </ul>
+                    <a href="https://github.com/sancodebits/room-reservation-system" class="github-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
                 </div>
                 <div class="project">
                     <h3>Banking System</h3>
-                    <p>Created a robust banking system using C++ and OOP principles for efficient account management.</p>
-                    <a href="https://github.com/sancodebits/banking-system" target="_blank" class="github-link">View on GitHub <i class="fab fa-github"></i></a>
+                    <p><strong>Technologies:</strong> C++, Visual Studio</p>
+                    <ul>
+                        <li>Created a banking system with account management and operations like deposits, withdrawals, and account creation.</li>
+                    </ul>
+                    <a href="https://github.com/sancodebits/banking-system" class="github-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
@@ -91,22 +94,21 @@
                 <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sancode" target="_blank">linkedin.com/in/sancode</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/sancodebits" target="_blank">github.com/sancodebits</a></p>
             </div>
-            <form>
+            <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div id="greeting-message"></div>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="footer">
-        <p>© 2024 Sandeep Singh. All rights reserved.</p>
+        <p>© 2024 Sandeep Singh. All Rights Reserved.</p>
     </footer>
 
-    <!-- Optional JavaScript -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
