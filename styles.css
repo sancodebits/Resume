@@ -21,8 +21,6 @@ h2, h3 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 ul {
@@ -34,51 +32,12 @@ li {
     margin-bottom: 10px;
 }
 
-/* Header Section */
-.header-section {
-    background-color: #004c8c;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.profile-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-.greeting-text {
-    font-size: 1.1rem;
-}
-
-.github-button {
-    background-color: #009cde;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+a {
     text-decoration: none;
-    margin-top: 15px;
 }
 
-.github-button:hover {
-    background-color: #007bbd;
-}
-
-.nav-buttons button {
-    background-color: #007bbd;
+.github-button, .download-buttons button, .nav-buttons button {
+    background-color: #009cde;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -88,23 +47,23 @@ li {
     transition: background-color 0.3s;
 }
 
-.nav-buttons button:hover {
-    background-color: #004c8c;
+.github-button:hover, .download-buttons button:hover, .nav-buttons button:hover {
+    background-color: #007bbd;
 }
 
-.download-buttons button {
+/* Section Styles */
+.header-section {
     background-color: #004c8c;
     color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
+    padding: 60px 0;
+    text-align: center;
 }
 
-.download-buttons button:hover {
-    background-color: #003366;
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 /* Floating Effects */
@@ -126,28 +85,7 @@ li {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-section {
-        padding: 40px 0;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .github-button {
-        width: 100%;
-        text-align: center;
-    }
-
     .nav-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .download-buttons {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -160,7 +98,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
