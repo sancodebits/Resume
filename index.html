@@ -4,152 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sandeep Singh's Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sandeep Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+
     <header class="header-section">
-        <div class="header-container">
-            <div class="greeting floating">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQGLZrxfPZfcRA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725119236469?e=1736985600&v=beta&t=d02JF_Ra_7ElltsTH8EdEfp5VdoQRkoH9LxpMb8sr7M" alt="Sandeep Singh" class="profile-img" />
+        <div class="container header-container">
+            <div class="greeting">
+                <img src="profile.jpg" alt="Profile Image" class="profile-img">
                 <div class="greeting-text">
-                    <h1>Hi, I'm Sandeep Singh!</h1>
-                    <p>Welcome to my resume website. I specialize in Data Engineering, and I’m passionate about building scalable systems.</p>
-                    <p>Let's build something amazing together!</p>
+                    <h1>Hello, I'm Sandeep Singh</h1>
+                    <p>Assistant Manager - Data Engineering</p>
+                    <p>Sector-17, Gurugram 122001</p>
                 </div>
             </div>
-        </div>
-        <nav class="nav-buttons">
-            <button onclick="scrollToSection('resume')">Resume</button>
-            <button onclick="scrollToSection('experience')">Experience</button>
-            <button onclick="scrollToSection('projects')">Projects</button>
-            <button onclick="scrollToSection('contact')">Contact</button>
-        </nav>
-        <div class="download-buttons">
-            <button onclick="window.open('resume.pdf', '_blank')">Download Resume (PDF)</button>
-            <a href="https://github.com/sancodebits/resume" target="_blank" class="github-button">
-                View Resume on GitHub
-            </a>
+            <div class="nav-buttons">
+                <button onclick="scrollToSection('education')">Education</button>
+                <button onclick="scrollToSection('experience')">Experience</button>
+                <button onclick="scrollToSection('projects')">Projects</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </div>
         </div>
     </header>
 
-    <section id="resume" class="resume-section floating">
+    <!-- Education Section -->
+    <section id="education" class="education-section floating">
         <div class="container">
-            <h2>Resume</h2>
-            <div class="resume-content">
-                <h3>Education</h3>
+            <h2>Education</h2>
+            <div class="section-box">
+                <h3>National Institute of Technology - Allahabad</h3>
+                <p><strong>July 2019 – June 2023</strong><br>
+                Bachelor of Technology - Electronics and Communication Engineering<br>
+                CPI: 8.7, Prayagraj, Uttar Pradesh</p>
+
+                <h3>Jawahar Navodaya Vidyalaya, Pondicherry</h3>
+                <p><strong>July 2016 – June 2018</strong><br>
+                AISSCE - XII: Score - 90%, Puducherry</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section floating">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="section-box">
+                <h3>Airtel Payments Bank - Assistant Manager (Data Engineering and FRMS)</h3>
+                <p><strong>July 2024 – Present</strong>, Gurugram, Haryana</p>
                 <ul>
-                    <li><strong>National Institute of Technology - Allahabad</strong> | Bachelor of Technology in Electronics and Communication Engineering (2019 - 2023) | CPI: 8.7</li>
-                    <li><strong>Jawahar Navodaya Vidyalaya, Pondicherry</strong> | AISSCE - XII: Score - 90% (2016 - 2018)</li>
+                    <li>Developed automated dashboard to monitor the statistics of freeze customers across all AI-ML models and Risk Rules.</li>
+                    <li>Enriched the model to increase coverage over fraudsters reported by LEA.</li>
+                    <li>Automated over 15 business intelligence reports, enhancing data accessibility for stakeholders with faster, error-free reporting and minimal manual effort.</li>
+                    <li>Developed rule-based systems through data analysis to flag fraudsters and minimize risk effectively.</li>
+                </ul>
+
+                <h3>Airtel Payments Bank - Engineering Trainee (Data Engineering)</h3>
+                <p><strong>July 2023 – June 2024</strong>, Gurugram, Haryana</p>
+                <ul>
+                    <li>Developed and automated dynamic dashboards utilizing Elastic-fetched data, integrating ETL processes to deliver actionable insights to cross-functional teams.</li>
+                    <li>Proficient in Python scripting to retrieve data from diverse sources including Elastic, Hive, Oracle databases, and parquet files as sources, ensuring seamless data integration.</li>
+                    <li>Automated job monitoring and system performance report, triggered daily via cron tab.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience-section floating">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience">
-                <div class="experience-item">
-                    <h3>Airtel Payments Bank</h3>
-                    <p><strong>Assistant Manager - Data Engineering</strong> | July 2024 - Present</p>
-                    <ul>
-                        <li>Developed automated dashboards to monitor freeze customer statistics.</li>
-                        <li>Enriched AI-ML models to improve fraud coverage.</li>
-                        <li>Automated 15+ business intelligence reports for quick and accurate data retrieval.</li>
-                        <li>Developed rule-based systems to minimize financial risk using data analysis.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Airtel Payments Bank</h3>
-                    <p><strong>Engineering Trainee - Data Engineering</strong> | July 2023 - June 2024</p>
-                    <ul>
-                        <li>Developed dynamic dashboards with ElasticSearch for real-time data fetching.</li>
-                        <li>Automated job monitoring and system performance reports.</li>
-                        <li>Proficient in Python and SQL for data extraction and manipulation.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Projects Section -->
     <section id="projects" class="projects-section floating">
         <div class="container">
             <h2>Projects</h2>
-            <div class="projects">
+            <div class="section-box">
                 <div class="project">
                     <h3>Room Reservation System</h3>
-                    <p><strong>Technologies:</strong> Java, Spring Boot, JPA, JPQL</p>
-                    <ul>
-                        <li>A fully-functional room reservation system to manage room bookings.</li>
-                        <li>Supports adding entities like food, drinks, and equipment to bookings.</li>
-                        <li>User-friendly UI for both admin and customer interfaces.</li>
-                    </ul>
-                    <a href="https://github.com/sancodebits/room-reservation-system" class="github-link" target="_blank">
-                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" class="github-logo" />
-                        View on GitHub
-                    </a>
+                    <p><strong>January 2022</strong><br>
+                    Developed a comprehensive room reservation system with Java, Spring Boot, and JPA. Implemented user-friendly features allowing administrators to manage rooms, layouts, and bookings. Users can conveniently add entities like food, drinks, and equipment while administrators can track all bookings efficiently.</p>
+                    <a href="https://github.com/sancodebits" target="_blank" class="github-link">View on GitHub</a>
                 </div>
+
                 <div class="project">
                     <h3>Banking System</h3>
-                    <p><strong>Technologies:</strong> C++, Visual Studio</p>
-                    <ul>
-                        <li>Designed a banking system to handle accounts, deposits, and withdrawals.</li>
-                        <li>Implemented an easy-to-use CLI for customer transactions.</li>
-                    </ul>
-                    <a href="https://github.com/sancodebits/banking-system" class="github-link" target="_blank">
-                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" class="github-logo" />
-                        View on GitHub
-                    </a>
+                    <p><strong>September 2020</strong><br>
+                    Created a robust banking system using C++ and OOP principles for efficient account management. Users can perform essential banking operations such as opening accounts, checking details, depositing, withdrawing, and account deletion. Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.</p>
+                    <a href="https://github.com/sancodebits" target="_blank" class="github-link">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact-section floating">
         <div class="container">
             <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> 
-                    <a href="mailto:sandeepsingh.avanti@gmail.com">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo" class="contact-logo" />
-                        sandeepsingh.avanti@gmail.com
-                    </a>
-                </p>
-                <p><i class="fas fa-phone-alt"></i> 
-                    <a href="tel:+919677565236">
-                        <img src="https://img.icons8.com/?size=100&id=KKcvjK8z6nA0&format=png&color=000000" alt="Phone Logo" class="contact-logo" />
-                        +91 9677565236
-                    </a>
-                </p>
-                <p><i class="fab fa-linkedin"></i> 
-                    <a href="https://linkedin.com/in/sancode" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" class="contact-logo" />
-                        linkedin.com/in/sancode
-                    </a>
-                </p>
-                <p><i class="fab fa-github"></i> 
-                    <a href="https://github.com/sancodebits" target="_blank">
-                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" class="contact-logo" />
-                        github.com/sancodebits
-                    </a>
-                </p>
+            <div class="section-box">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+919677565236">+91 9677565236</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sandeepsingh.avanti@gmail.com">sandeepsingh.avanti@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sancode" target="_blank">linkedin.com/in/sancode</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/sancodebits" target="_blank">github.com/sancodebits</a></p>
+                </div>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="greeting-message"></div>
             </div>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div id="greeting-message"></div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2024 Sandeep Singh. All Rights Reserved.</p>
+        <p>© 2024 Sandeep Singh | All Rights Reserved</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
