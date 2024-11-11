@@ -3,6 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0d1b2a; /* Dark blue background */
+    color: #ffffff; /* White text for readability */
 }
 
 a {
@@ -12,7 +14,7 @@ a {
 
 /* Header */
 header {
-    background-color: #2A9D8F;
+    background-color: #1d3557; /* Darker blue for the header */
     padding: 20px;
     text-align: center;
 }
@@ -28,14 +30,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #A8DADC; /* Teal color for links */
     font-weight: bold;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #264653;
-    color: #F1FAEE;
+    background-color: #1d3557; /* Consistent dark blue */
+    color: #F1FAEE; /* Light teal for contrast */
     text-align: center;
     padding: 80px 20px;
 }
@@ -45,132 +47,115 @@ header nav ul li a {
 }
 
 button {
-    background-color: #E9C46A;
+    background-color: #A8DADC; /* Teal button */
     padding: 12px 24px;
     font-size: 18px;
     border: none;
     cursor: pointer;
-    color: black;
+    color: #0d1b2a;
     border-radius: 5px;
+    margin: 10px;
 }
 
 button a {
-    color: black;
+    color: #0d1b2a;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #A8DADC; /* Teal border */
+}
+
+/* Floating Animation for Timeline Items */
+@keyframes float-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.float-in {
+    opacity: 0;
+    animation: float-in 0.8s ease-out forwards;
+}
+
+.float-in:nth-child(even) {
+    animation-delay: 0.3s;
 }
 
 /* Resume Section */
 .resume-section {
-    background-color: #F1FAEE;
+    background-color: #F1FAEE; /* Light background */
+    color: #1d3557;
     padding: 40px 20px;
 }
 
-.resume-section h2 {
-    text-align: center;
-    color: #264653;
-}
-
-.timeline {
-    margin-top: 20px;
-}
-
 .timeline-item {
-    background-color: #2A9D8F;
+    background-color: #457b9d; /* Blue for experience items */
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    color: white;
-}
-
-.timeline-item h3 {
-    font-size: 1.6em;
-}
-
-.timeline-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.timeline-item ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
+    color: #F1FAEE;
 }
 
 /* Projects Section */
 .projects-section {
-    background-color: #E9C46A;
+    background-color: #A8DADC; /* Teal background */
     padding: 40px 20px;
-}
-
-.projects-section h2 {
-    color: #264653;
-    text-align: center;
+    color: #1d3557;
 }
 
 .project {
-    background-color: #264653;
+    background-color: #457b9d;
     padding: 20px;
-    margin: 20px 0;
     border-radius: 10px;
+    margin: 20px 0;
     color: #F1FAEE;
-}
-
-.project h3 {
-    font-size: 1.5em;
-}
-
-.project a {
-    color: #E9C46A;
-    font-weight: bold;
-    margin-top: 10px;
-    display: inline-block;
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #264653;
+    background-color: #1d3557;
     padding: 40px 20px;
-    color: white;
+    color: #F1FAEE;
 }
 
-.contact-section h2 {
+.contact-info {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-section input,
-.contact-section textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #E9C46A;
-}
-
-.contact-section button {
-    background-color: #E9C46A;
-    padding: 12px 24px;
+.contact-info p {
     font-size: 18px;
-    border: none;
-    cursor: pointer;
-    color: black;
-    border-radius: 5px;
+    margin: 10px 0;
 }
 
-/* Footer */
-.footer {
-    background-color: #2A9D8F;
+.contact-info i {
+    color: #A8DADC;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #A8DADC;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0d1b2a;
     text-align: center;
     padding: 20px;
-    color: white;
-}
-
-.footer a {
-    color: #F1FAEE;
-    text-decoration: none;
+    color: #A8DADC;
+    font-size: 14px;
 }
