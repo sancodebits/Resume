@@ -198,6 +198,31 @@ h3 {
 }
 
 /* Form Styles */
+/* Contact Section */
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-logo {
+    width: 18px; /* Appropriate size for the logos */
+    margin-right: 10px;
+}
+
+/* Form Styles */
 form input, form textarea, form button {
     width: 100%;
     padding: 12px;
@@ -218,9 +243,10 @@ form button:hover {
 
 /* Small adjustments to enhance logo display */
 .contact-logo {
-    width: 25px;  /* Slightly larger logos */
+    width: 20px;  /* Slightly smaller logos */
     margin-right: 12px;
 }
+
 
 
 /* Footer Section */
