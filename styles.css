@@ -64,12 +64,13 @@ section {
     background-color: white;
 }
 
-.experience-item {
+.experience-item, .project {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    width: 48%; /* Set the width to 48% to maintain same size */
 }
 
 .experience-item ul {
@@ -84,21 +85,6 @@ section {
 .projects-section {
     background-color: #f7f7f7;
     padding: 50px 0;
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
 }
 
 /* GitHub Links */
@@ -127,8 +113,9 @@ section {
     gap: 20px;
 }
 
+/* Ensuring Equal Width for All Items */
 .experience-item, .project {
-    width: 48%; /* Make both sections have the same width */
+    width: 48%; /* Ensure that both project and experience items have the same width */
 }
 
 /* Contact Section */
