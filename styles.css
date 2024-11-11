@@ -1,105 +1,51 @@
-/* Global Styles */
+/* General Layout */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d1b2a; /* Dark blue background */
-    color: #ffffff; /* White text for readability */
+    background-color: #0d1b2a;
+    color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 /* Header */
 header {
-    background-color: #1d3557; /* Darker blue for the header */
-    padding: 20px;
-    text-align: center;
+    background-color: #1d3557;
+    padding: 10px 0;
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #A8DADC; /* Teal color for links */
-    font-weight: bold;
+.nav-link.active {
+    border-bottom: 2px solid #A8DADC;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #1d3557; /* Consistent dark blue */
-    color: #F1FAEE; /* Light teal for contrast */
+    background-color: #1d3557;
     text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-button {
-    background-color: #A8DADC; /* Teal button */
-    padding: 12px 24px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    color: #0d1b2a;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-button a {
-    color: #0d1b2a;
-}
-
-.profile-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #A8DADC; /* Teal border */
-}
-
-/* Floating Animation for Timeline Items */
-@keyframes float-in {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.float-in {
-    opacity: 0;
-    animation: float-in 0.8s ease-out forwards;
-}
-
-.float-in:nth-child(even) {
-    animation-delay: 0.3s;
+    padding: 50px 0;
 }
 
 /* Resume Section */
 .resume-section {
-    background-color: #F1FAEE; /* Light background */
+    background-color: #F1FAEE;
     color: #1d3557;
-    padding: 40px 20px;
+    padding: 50px 0;
 }
 
 .timeline-item {
-    background-color: #457b9d; /* Blue for experience items */
+    background-color: #457b9d;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -108,50 +54,25 @@ button a {
 
 /* Projects Section */
 .projects-section {
-    background-color: #A8DADC; /* Teal background */
-    padding: 40px 20px;
-    color: #1d3557;
+    background-color: #A8DADC;
+    padding: 50px 0;
 }
 
 .project {
     background-color: #457b9d;
     padding: 20px;
-    border-radius: 10px;
     margin: 20px 0;
+    border-radius: 10px;
     color: #F1FAEE;
 }
 
 /* Contact Section */
 .contact-section {
     background-color: #1d3557;
-    padding: 40px 20px;
-    color: #F1FAEE;
+    padding: 50px 0;
 }
 
-.contact-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.contact-info i {
-    color: #A8DADC;
-    margin-right: 10px;
-}
-
-.contact-info a {
-    color: #A8DADC;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
+/* Footer */
 footer {
     background-color: #0d1b2a;
     text-align: center;
