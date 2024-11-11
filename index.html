@@ -22,14 +22,16 @@
                 </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="nav-buttons">
+            <button onclick="scrollToSection('resume')">Resume</button>
+            <button onclick="scrollToSection('experience')">Experience</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
         </nav>
+        <div class="download-buttons">
+            <button onclick="window.open('resume.pdf', '_blank')">Download Resume (PDF)</button>
+            <button onclick="window.open('https://github.com/sancodebits/resume', '_blank')">View Resume on GitHub</button>
+        </div>
     </header>
 
     <section id="resume" class="resume-section floating">
