@@ -4,10 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandeep Singh | Data Engineer & Automation Expert</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #0073e6;
+            color: #fff;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+        }
+        .header .profile-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #005bb5;
+            padding: 1rem;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #004494;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .section h2 {
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+        .floating-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 1rem 2rem;
+            transition: transform 0.3s;
+        }
+        .floating-box:hover {
+            transform: translateY(-5px);
+        }
+        .github-link, .submit-btn {
+            background-color: rgba(0, 115, 230, 0.8);
+            color: #fff;
+            padding: 0.6rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .github-link:hover, .submit-btn:hover {
+            background-color: rgba(0, 91, 181, 0.9);
+        }
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .social-links {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: #0073e6;
+            font-size: 2rem;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #004494;
+        }
+        .resume-section {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .download-btn:hover {
+            background-color: #004494;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header class="header">
         <img src="logo.png" alt="Logo" class="logo">
@@ -15,7 +146,6 @@
         <div class="header-text">
             <h1>Hi, I'm Sandeep Singh</h1>
             <p>Empowering businesses with data-driven insights and automation.</p>
-            <a href="resume.pdf" download="Sandeep_Singh_Resume" class="download-btn">Download Resume</a>
         </div>
     </header>
 
@@ -98,6 +228,34 @@
         </form>
     </section>
 
+    <!-- Social Links Section -->
+    <div class="social-links">
+        <h2>Connect With Me</h2>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your.email@example.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/sancodebits" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <!-- Resume Download Section -->
+    <div class="resume-section">
+        <h2>Download My Resume</h2>
+        <a href="resume.pdf" download="Sandeep_Singh_Resume" class="download-btn">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message, we will be in touch shortly!');
+            this.reset();
+        });
+    </script>
 </body>
-<script src="scripts.js"></script>
 </html>
