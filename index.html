@@ -423,6 +423,10 @@
                 //     statusDiv.className = 'form-status error';
                 // })
                 .finally(function() {
+                     // Show success message
+                    statusDiv.textContent = 'Thank you! Your message has been sent successfully.';
+                    statusDiv.className = 'form-status success';
+                    form.reset();
                     // Re-enable submit button and hide spinner
                     submitBtn.disabled = false;
                     btnText.style.opacity = '1';
