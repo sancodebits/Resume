@@ -1,131 +1,97 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #4b8cff;
-    padding: 15px;
+.header {
     text-align: center;
+    padding: 2rem;
+    background-color: #0073e6;
+    color: #fff;
 }
 
-nav .nav-btn {
-    background-color: rgba(75, 140, 255, 0.8);
-    color: white;
-    padding: 10px 20px;
+.header .profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.header .download-btn {
+    background-color: #005bb5;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header .download-btn:hover {
+    background-color: #004494;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #005bb5;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #004494;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.section h2 {
+    color: #0073e6;
+    margin-bottom: 1rem;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 1.5rem;
+}
+
+.github-link, .submit-btn {
+    background-color: rgba(0, 115, 230, 0.8);
+    color: #fff;
+    padding: 0.6rem 1rem;
     border: none;
     border-radius: 5px;
-    margin: 10px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-nav .nav-btn:hover {
-    background-color: #2e6db8;
+.github-link:hover, .submit-btn:hover {
+    background-color: rgba(0, 91, 181, 0.9);
 }
 
-main {
-    padding: 20px;
-}
-
-/* Floating Box Styles for Each Section */
-.floating-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: none; /* Initially hide all sections */
-    transition: all 0.3s ease;
-}
-
-.floating-box h3 {
-    color: #4b8cff;
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-.floating-box ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.floating-box ul li {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-}
-
-.floating-box ul ul {
-    list-style-type: circle;
-}
-
-.floating-box ul li strong {
-    color: #4b8cff;
-}
-
-/* Contact Section Styles */
-#contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-#contact label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-#contact input, #contact textarea {
-    padding: 10px;
-    margin-top: 5px;
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-#contact textarea {
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: #4b8cff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #2e6db8;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    nav .nav-btn {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-
-    .floating-box {
-        padding: 15px;
-    }
-
-    .floating-box h3 {
-        font-size: 22px;
-    }
-
-    .floating-box ul li {
-        font-size: 14px;
-    }
-}
