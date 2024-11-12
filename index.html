@@ -3,111 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Singh - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sandeep Singh | Data Engineer & Automation Expert</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header with navigation buttons -->
-    <header>
-        <nav>
-            <button class="nav-btn" onclick="showSection('education')">Education</button>
-            <button class="nav-btn" onclick="showSection('experience')">Experience</button>
-            <button class="nav-btn" onclick="showSection('projects')">Projects</button>
-            <button class="nav-btn" onclick="showSection('technical-skills')">Technical Skills</button>
-            <button class="nav-btn" onclick="showSection('contact')">Contact Me</button>
-        </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="profile-photo.jpg" alt="Sandeep Singh" class="profile-photo">
+        <div class="header-text">
+            <h1>Hi, I'm Sandeep Singh</h1>
+            <p>Empowering businesses with data-driven insights and automation.</p>
+            <a href="resume.pdf" download="Sandeep_Singh_Resume" class="download-btn">Download Resume</a>
+        </div>
     </header>
 
-    <!-- Main content sections -->
-    <main>
-        <!-- Education Section -->
-        <section id="education" class="floating-box">
-            <h3>Education</h3>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Data Engineer and Automation Specialist with experience in designing automated reports, dynamic dashboards, and fraud detection systems. Currently working at Airtel Payments Bank as an Assistant Manager in Data Engineering and FRMS.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Airtel Payments Bank</h3>
+            <p><strong>Assistant Manager - Data Engineering and FRMS</strong> (July 2024 – Present)</p>
             <ul>
-                <li><strong>National Institute of Technology - Allahabad</strong> <br> B.Tech, Electronics and Communication Engineering <br> CPI: 8.7 | July 2019 – June 2023</li>
-                <li><strong>Jawahar Navodaya Vidyalaya, Puducherry</strong> <br> AISSCE - XII: 90% | July 2016 – June 2018</li>
+                <li>Developed automated dashboards to monitor freeze customer statistics across AI-ML models and risk rules.</li>
+                <li>Enhanced fraud detection coverage by analyzing and integrating data from LEA.</li>
+                <li>Automated 15+ business intelligence reports, reducing manual effort and error rate.</li>
+                <li>Built rule-based systems for flagging fraudsters, minimizing risk effectively.</li>
             </ul>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="floating-box">
-            <h3>Experience</h3>
+        </div>
+        <div class="experience-item">
+            <h3>Airtel Payments Bank</h3>
+            <p><strong>Engineering Trainee - Data Engineering</strong> (July 2023 – June 2024)</p>
             <ul>
-                <li>
-                    <strong>Airtel Payments Bank - Assistant Manager, Data Engineering</strong> <br>
-                    July 2024 – Present
-                    <ul>
-                        <li>Developed automated dashboard to monitor freeze customers.</li>
-                        <li>Enriched AI-ML models to increase fraud detection coverage.</li>
-                        <li>Automated over 15 business intelligence reports.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Airtel Payments Bank - Engineering Trainee</strong> <br>
-                    July 2023 – June 2024
-                    <ul>
-                        <li>Developed dynamic dashboards integrating ETL processes.</li>
-                        <li>Automated job monitoring and system performance reports.</li>
-                    </ul>
-                </li>
+                <li>Created dynamic dashboards utilizing data from Elastic Search, integrating ETL processes for insights.</li>
+                <li>Proficiently used Python to retrieve data from sources like Elastic, Hive, Oracle, and Parquet files.</li>
+                <li>Automated daily system performance reports with crontab, optimizing monitoring tasks.</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="floating-box">
-            <h3>Projects</h3>
-            <ul>
-                <li>
-                    <strong>Room Reservation System</strong> <br>
-                    Developed with Java, Spring Boot, and JPA. <br>
-                    <ul>
-                        <li>Implemented user-friendly features for room management.</li>
-                        <li>Integrated food, drinks, and equipment into the booking system.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Banking System</strong> <br>
-                    Built using C++ for efficient account management. <br>
-                    <ul>
-                        <li>Supports account creation, checking details, and transactions.</li>
-                        <li>Provides an intuitive UI for different banking operations.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Room Reservation System</h3>
+            <p>Built with Java, Spring Boot, and JPA. Features room management, booking, and layout configuration.</p>
+            <a href="https://github.com/sancodebits/room-reservation" class="github-link">View on GitHub</a>
+        </div>
+        <div class="project-item">
+            <h3>Banking System</h3>
+            <p>Developed a banking application using C++ with essential operations and a UI for account management.</p>
+            <a href="https://github.com/sancodebits/banking-system" class="github-link">View on GitHub</a>
+        </div>
+    </section>
 
-        <!-- Technical Skills Section -->
-        <section id="technical-skills" class="floating-box">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li><strong>Languages:</strong> Python, Java, C++, C, SQL</li>
-                <li><strong>Technologies/Frameworks:</strong> Linux, Git, Bitbucket, Elastic Search, Kibana, Spring Boot, Kafka, Spark, Airflow, Hadoop, AWS, Excel</li>
-                <li><strong>Developer Tools:</strong> VS Code, Pycharm, Jupyter, Vim, Crontab</li>
-            </ul>
-        </section>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p><strong>National Institute of Technology - Allahabad</strong> (2019 - 2023) - Bachelor of Technology in Electronics and Communication Engineering, CPI: 8.7</p>
+        <p><strong>Jawahar Navodaya Vidyalaya, Pondicherry</strong> (2016 - 2018) - AISSCE - XII, Score: 90%</p>
+    </section>
 
-        <!-- Contact Me Section -->
-        <section id="contact" class="floating-box">
-            <h3>Contact Me</h3>
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required><br>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <p>Python, Java, C++, C, SQL, Linux, Git, Elastic Search, Kibana, Spring Boot, Kafka, Spark, Airflow, Hadoop, AWS, Excel</p>
+    </section>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone"><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
+<script src="scripts.js"></script>
 </html>
