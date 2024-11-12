@@ -410,6 +410,7 @@
             };
             
             // Send email using EmailJS
+            console.log('check parameter', templateParams)
             emailjs.send('service_s9b1bnp', 'template_a4tmxok', templateParams)
                 .then(function(response) {
                     // Show success message
