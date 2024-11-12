@@ -401,11 +401,12 @@
             spinner.style.display = 'inline-block';
             // Get form data
             const templateParams = {
-                to_name: 'Sandeep Singh',
+                reply_to: 'sandeepsingh.official.dev@gmail.com',
                 from_name: form.name.value,
                 from_email: form.email.value,
                 message: form.message.value
             };
+            
             // Send email using EmailJS
             emailjs.send('service_s9b1bnp', 'template_a4tmxok', templateParams)
                 .then(function(response) {
