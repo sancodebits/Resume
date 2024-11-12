@@ -1,14 +1,5 @@
-function showSection(sectionId) {
-    // Hide all sections
-    const sections = document.querySelectorAll('.floating-box');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-
-    // Show the clicked section
-    const activeSection = document.getElementById(sectionId);
-    activeSection.style.display = 'block';
-}
-
-// Initially show the Education section
-showSection('education');
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message, we will be in touch shortly!');
+    this.reset();
+});
