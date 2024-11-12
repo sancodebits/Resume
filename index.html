@@ -358,14 +358,14 @@
         <p>Python, Java, C++, C, SQL, Linux, Git, Elastic Search, Kibana, Spring Boot, Kafka, Spark, Airflow, Hadoop, AWS, Excel</p>
     </section>
 
-    <!-- Contact Section -->
-   <script>
+ <!-- Contact Section -->
+    <script>
         (function() {
             // Replace with your EmailJS public key
             emailjs.init("LdDEiwFtEWoJT9b05");
         })();
     </script>
-       <section id="contact" class="section floating-box">
+    <section id="contact" class="section floating-box">
         <h2>Contact Me</h2>
         <form id="contact-form">
             <div class="form-group">
@@ -386,30 +386,26 @@
             </button>
         </form>
     </section>
-
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-
             // Get form elements
             const form = this;
             const submitBtn = form.querySelector('.submit-btn');
             const btnText = submitBtn.querySelector('.btn-text');
             const spinner = submitBtn.querySelector('.loading-spinner');
             const statusDiv = form.querySelector('.form-status');
-
             // Disable submit button and show loading spinner
             submitBtn.disabled = true;
             btnText.style.opacity = '0.5';
             spinner.style.display = 'inline-block';
-
             // Get form data
             const templateParams = {
+                to_name: 'Sandeep Singh',
                 from_name: form.name.value,
                 from_email: form.email.value,
                 message: form.message.value
             };
-
             // Send email using EmailJS
             emailjs.send('service_s9b1bnp', 'template_a4tmxok', templateParams)
                 .then(function(response) {
@@ -430,9 +426,7 @@
                 });
         });
     </script>
-
-
-
+        
     <!-- Social Links Section -->
     <div class="social-links">
         <h2>Connect With Me</h2>
