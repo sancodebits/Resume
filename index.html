@@ -410,17 +410,19 @@
         try {
             // Get form data
             const templateParams = {
-                to_email: 'sandeepsingh.official.dev@gmail.com',  // Your email where you want to receive messages
+                // to_email: 'sandeepsingh.official.dev@gmail.com',  // Your email where you want to receive messages
                 from_name: document.getElementById('name').value,
-                from_email: document.getElementById('email').value,
+                to_name: 'Sandeep Singh',
+                // from_email: document.getElementById('email').value,
                 message: document.getElementById('message').value,
-                reply_to: document.getElementById('email').value
+                your_email: document.getElementById('email').value
+                // reply_to: document.getElementById('email').value
             };
 
             // Send email using EmailJS
             await emailjs.send(
                 'service_s9b1bnp',         // Your EmailJS service ID
-                'template_a4tmxok',         // Your EmailJS template ID
+                'template_ef1p07u',         // Your EmailJS template ID
                 templateParams,
                 'epVN4F9BpX6sVdE7p'           // Your EmailJS public key
             );
