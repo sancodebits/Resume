@@ -266,11 +266,11 @@
 </style>
     
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
+<!-- <script>
     (function() {
         emailjs.init("epVN4F9BpX6sVdE7p"); // Replace with your EmailJS public key
     })();
-</script>
+</script> -->
 </head> 
     
 <body>
@@ -383,20 +383,20 @@
 </section>
 
 <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    // Initialize EmailJS with your public key
+    (function() {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Get form elements using proper references
+        // Get form elements
         const formElement = document.getElementById('contact-form');
         const submitBtn = formElement.querySelector('.submit-btn');
         const btnText = submitBtn.querySelector('.btn-text');
         const spinner = submitBtn.querySelector('.loading-spinner');
         const statusDiv = formElement.querySelector('.form-status');
-        
-        // Get input field values directly
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const messageInput = document.getElementById('message');
         
         // Clear previous status messages
         statusDiv.textContent = '';
@@ -406,35 +406,41 @@
         submitBtn.disabled = true;
         btnText.style.opacity = '0.5';
         spinner.style.display = 'inline-block';
-        
-        // Get form data
-        const templateParams = {
-            reply_to: 'sandeepsingh.official.dev@gmail.com',
-            from_name: nameInput.value,
-            from_email: emailInput.value,
-            message: messageInput.value
-        };
-        
-        // Send email using EmailJS
-        emailjs.send('service_s9b1bnp', 'template_a4tmxok', templateParams)
-            .then(function(response) {
-                // Show success message
-                statusDiv.textContent = 'Thank you! Your message has been sent successfully.';
-                statusDiv.className = 'form-status success';
-                formElement.reset();
-            })
-            .catch(function(error) {
-                // Show error message
-                statusDiv.textContent = 'Sorry, there was an error sending your message. Please try again later.';
-                statusDiv.className = 'form-status error';
-                console.error('EmailJS Error:', error);
-            })
-            .finally(function() {
-                // Re-enable submit button and hide spinner
-                submitBtn.disabled = false;
-                btnText.style.opacity = '1';
-                spinner.style.display = 'none';
-            });
+
+        try {
+            // Get form data
+            const templateParams = {
+                to_email: 'sandeepsingh.official.dev@gmail.com',  // Your email where you want to receive messages
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                reply_to: document.getElementById('email').value
+            };
+
+            // Send email using EmailJS
+            await emailjs.send(
+                'service_s9b1bnp',         // Your EmailJS service ID
+                'template_a4tmxok',         // Your EmailJS template ID
+                templateParams,
+                'YOUR_PUBLIC_KEY'           // Your EmailJS public key
+            );
+
+            // Show success message
+            statusDiv.textContent = 'Thank you! Your message has been sent successfully.';
+            statusDiv.className = 'form-status success';
+            formElement.reset();
+
+        } catch (error) {
+            // Show error message
+            console.error('EmailJS Error:', error);
+            statusDiv.textContent = 'Sorry, there was an error sending your message. Please try again later.';
+            statusDiv.className = 'form-status error';
+        } finally {
+            // Re-enable submit button and hide spinner
+            submitBtn.disabled = false;
+            btnText.style.opacity = '1';
+            spinner.style.display = 'none';
+        }
     });
 </script>
     
