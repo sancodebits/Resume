@@ -264,13 +264,14 @@
         cursor: not-allowed;
     }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
     (function() {
-        // Replace with your EmailJS public key
-        emailjs.init("epVN4F9BpX6sVdE7p");
+        emailjs.init("epVN4F9BpX6sVdE7p"); // Replace with your EmailJS public key
     })();
 </script>
-</head>
+</head> 
     
 <body>
     
@@ -385,12 +386,17 @@
     document.getElementById('contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form elements
-        const form = this;
-        const submitBtn = form.querySelector('.submit-btn');
+        // Get form elements using proper references
+        const formElement = document.getElementById('contact-form');
+        const submitBtn = formElement.querySelector('.submit-btn');
         const btnText = submitBtn.querySelector('.btn-text');
         const spinner = submitBtn.querySelector('.loading-spinner');
-        const statusDiv = form.querySelector('.form-status');
+        const statusDiv = formElement.querySelector('.form-status');
+        
+        // Get input field values directly
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
         
         // Clear previous status messages
         statusDiv.textContent = '';
@@ -404,9 +410,9 @@
         // Get form data
         const templateParams = {
             reply_to: 'sandeepsingh.official.dev@gmail.com',
-            from_name: form.name.value,
-            from_email: form.email.value,
-            message: form.message.value
+            from_name: nameInput.value,
+            from_email: emailInput.value,
+            message: messageInput.value
         };
         
         // Send email using EmailJS
@@ -415,7 +421,7 @@
                 // Show success message
                 statusDiv.textContent = 'Thank you! Your message has been sent successfully.';
                 statusDiv.className = 'form-status success';
-                form.reset();
+                formElement.reset();
             })
             .catch(function(error) {
                 // Show error message
