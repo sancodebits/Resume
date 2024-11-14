@@ -378,9 +378,9 @@
 
 <script>
     // Initialize EmailJS with your public key
-    const sId = 'service_s9b1bnp'
-    const tId = 'template_ef1p07u'
-    const ssId = 'epVN4F9BpX6sVdE7p'
+    // const sId = 'service_s9b1bnp'
+    // const tId = 'template_ef1p07u'
+    // const ssId = 'epVN4F9BpX6sVdE7p'
     (function() {
         emailjs.init("epVN4F9BpX6sVdE7p"); // Replace with your actual public key
     })();
@@ -415,10 +415,10 @@
             
             // Send email using EmailJS
             await emailjs.send(
-                sId,         // Your EmailJS service ID
-                tId,         // Your EmailJS template ID
+                'service_s9b1bnp',         // Your EmailJS service ID
+                'template_ef1p07u',         // Your EmailJS template ID
                 templateParams,
-                ssId           // Your EmailJS public key
+                'epVN4F9BpX6sVdE7p'          // Your EmailJS public key
             );
 
             // Show success message
