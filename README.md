@@ -1,4 +1,4 @@
-# resume
+# Resume
 ---
 
 ### Key Features of This README
